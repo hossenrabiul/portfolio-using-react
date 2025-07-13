@@ -52,8 +52,10 @@ const Header = () => {
           </div>
         </div>
         <div className="img-container">
-          <div className="w-[400px] h-[400px] rounded-full bg-[#e3e8e4]">
-            <img className="max-w-[400px]" src={img} alt="" />
+          <div className="w-[400px] h-[400px]">
+            <div className="relative w-[400px] h-[400px] rounded-full border-8 border-sky-700 shadow-lg">
+                <img className="absolute rounded-full  bg-transparent" src={img} alt="" />
+            </div>
           </div>
         </div>
       </div>
