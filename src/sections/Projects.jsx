@@ -1,8 +1,8 @@
 import React from "react";
 import { LuArrowRight } from "react-icons/lu";
 import { BsBoxArrowUpRight } from "react-icons/bs";
-import img1 from "../assets/images/Portfolio-img/portfolio-2.png";
-import img2 from "../assets/images/Portfolio-img/portfolio-3.png";
+import img1 from "../assets/images/projects-img/Screenshot 2025-07-13 145946.png";
+import img2 from "../assets/images/projects-img/Screenshot 2025-07-13 145924.png";
 const Projects = () => {
   return (
     <div className="projects">
@@ -19,19 +19,18 @@ const Projects = () => {
 
       <div className="flex flex-col lg:flex-row md:flex-row gap-5 mt-10 justify-center items-center rounded-2xl ">
         <div className="p-6 rounded-2xl bg-[#000033]">
-          <img className="w-full h-[220px] object-cover rounded-xl transform transition-transform duration-300 ease-in-out hover:scale-[1.02] hover:brightness-110" src={img2} alt="" />
+          <img className="w-[400px] h-[220px] object-cover rounded-xl transform transition-transform duration-300 ease-in-out hover:scale-[1.02] hover:brightness-110" src={img2} alt="" />
           <div className="mt-5 space-y-3">
             <h3 className="text-white text-2xl font-bold">
-              OpenAI Interview Bot
+              Golf Club
             </h3>
             <p className="text-[#c0c0d1] text-sm leading-relaxed">
-              An intelligent mock interview platform powered by OpenAI. <br />{" "}
-              Engage in natural conversations without forms or clicks.
+              A Golf spoting club for the people who are interested <br /> in sports gaming...
             </p>
           </div>
           <div className="mt-6 flex flex-wrap gap-3">
             <a
-              href="#"
+              href="https://golf-project-using-react.vercel.app/"
               className="flex items-center gap-2 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white text-sm font-semibold px-4 py-2 rounded-lg transition-all duration-200"
             >
               <BsBoxArrowUpRight className="text-lg" />
@@ -44,19 +43,18 @@ const Projects = () => {
           </div>
         </div>
         <div className="p-6 rounded-2xl bg-[#000033]">
-          <img className="w-full h-[220px] object-cover rounded-xl transform transition-transform duration-300 ease-in-out hover:scale-[1.02] hover:brightness-110" src={img1} alt="" />
+          <img className="w-[400px] h-[220px] object-cover rounded-xl transform transition-transform duration-300 ease-in-out hover:scale-[1.02] hover:brightness-110" src={img1} alt="" />
           <div className="mt-5 space-y-3">
             <h3 className="text-white text-2xl font-bold">
-              OpenAI Interview Bot
+              Blood Donation
             </h3>
             <p className="text-[#c0c0d1] text-sm leading-relaxed">
-              An intelligent mock interview platform powered by OpenAI. <br />{" "}
-              Engage in natural conversations without forms or clicks.
+              A public blood donation platform to save people's lives. <br /> so that we can help people by giving it....
             </p>
           </div>
           <div className="mt-6 flex flex-wrap gap-3">
             <a
-              href="#"
+              href="https://blood-donor-client.vercel.app/"
               className="flex items-center gap-2 bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-500 hover:to-purple-500 text-white text-sm font-semibold px-4 py-2 rounded-lg transition-all duration-200"
             >
               <BsBoxArrowUpRight className="text-lg" />

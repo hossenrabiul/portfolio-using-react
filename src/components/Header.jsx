@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../assets/images/avatar.webp";
+import img from "../assets/images/Portfolio-img/profile.jpg";
 import { FaFacebookF, FaGithub } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { GrPowerForceShutdown } from "react-icons/gr";
