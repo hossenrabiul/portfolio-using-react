@@ -1,8 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoLocationSharp } from "react-icons/io5";
 import { CgMail } from "react-icons/cg";
 import { FaPhoneAlt } from "react-icons/fa";
+import axios from "axios";
+import { number } from "framer-motion";
 const Contact = () => {
+  const [showMsg, setShowMsg] = useState("");
+  const [formdata, setFormdata] = useState({
+    name: "",
+    email: "",
+    number: "",
+    subj: "",
+    message: "",
+  });
+  const onHandleChange = (e) => {
+    setFormdata({ ...formdata, [e.target.name]: e.target.value });
+  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log(formdata)
+    try {
+      const res = await axios.post("", formdata);
+      setShowMsg("Your message has been sent successfully");
+      console.log(res);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <div className="max-w-[1000px] mx-auto">
       <div className="text-center">
@@ -53,47 +78,56 @@ const Contact = () => {
           </div>
         </div>
         <div>
-          <div className="">
-            <input
-              className="me-3 mb-4 border-1 border-[#809493] ps-6 py-4 rounded-2xl"
-              type="text"
-              placeholder="Your name"
-            />
-            <input
-              className="me-3 mb-4 border-1 border-[#809493] ps-6 py-4 rounded-2xl"
-              type="email"
-              name=""
-              id=""
-              placeholder="Your Email"
-            />{" "}
-            <br />
-            <input
-              className="me-3 mb-4 border-1 border-[#809493] ps-6 py-4 rounded-2xl"
-              type="number"
-              placeholder="Your phone"
-            />
-            <input
-              className="me-3 mb-4 border-1 border-[#809493] ps-6 py-4 rounded-2xl"
-              type="text"
-              name=""
-              id=""
-              placeholder="Your Subject"
-            />{" "}
-            <br />
-            <textarea
-              className="me-3 border-1 border-[#809493] ps-6 py-4 rounded-2xl"
-              name=""
-              id=""
-              cols="45"
-              rows="7"
-              placeholder="Write your messages here"
-            ></textarea>
-            <div className="mt-6">
-              <button className="bg-[#f75023] font-bold text-[#fff] hover:bg-transparent hover:text-[#000000] border-2 border-[#f75023] hover:duration-700 transition-colors px-12 py-4 rounded-full">
-                Submit Now
-              </button>
+          <form onSubmit={handleSubmit}>
+            <div className="">
+              <input
+                className="me-3 mb-4 border-1 border-[#809493] ps-6 py-4 rounded-2xl"
+                type="text"
+                placeholder="Your name"
+                name="name"
+                onChange={onHandleChange}
+              />
+              <input
+                className="me-3 mb-4 border-1 border-[#809493] ps-6 py-4 rounded-2xl"
+                type="email"
+                name="email"
+                id=""
+                placeholder="Your Email"
+                onChange={onHandleChange}
+              />{" "}
+              <br />
+              <input
+                className="me-3 mb-4 border-1 border-[#809493] ps-6 py-4 rounded-2xl"
+                type="number"
+                placeholder="Your phone"
+                name="number"
+                onChange={onHandleChange}
+              />
+              <input
+                className="me-3 mb-4 border-1 border-[#809493] ps-6 py-4 rounded-2xl"
+                type="text"
+                name="subj"
+                id=""
+                placeholder="Your Subject"
+                onChange={onHandleChange}
+              />{" "}
+              <br />
+              <textarea
+                className="me-3 border-1 border-[#809493] ps-6 py-4 rounded-2xl"
+                name="message"
+                id=""
+                cols="45"
+                rows="7"
+                placeholder="Write your messages here"
+                onChange={onHandleChange}
+              ></textarea>
+              <div className="mt-6">
+                <button type="submit" className="bg-[#f75023] font-bold text-[#fff] hover:bg-transparent hover:text-[#000000] border-2 border-[#f75023] hover:duration-700 transition-colors px-12 py-4 rounded-full">
+                  Submit Now
+                </button>
+              </div>
             </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>

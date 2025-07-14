@@ -70,7 +70,7 @@ const Navbar = () => {
               <li>
                 <button className="font-medium text-lg jost-font btn hover:bg-[#f75023] hover:text-white transition-colors duration-700 py-5 px-10 rounded-3xl ms-3 border-2 border-[#f75023] text-[#000000]">
                   <a
-                    href="https://docs.google.com/document/d/1vS4tKq9LqtHUwuaV9o_VSpSP52sKkW0E_Xqtnhi7GN0/export?format=pdf
+                    href="https://drive.google.com/file/d/1PwHafigni9yBd3gUP4f6DZ8bUvk_aN24/view?usp=drive_link
                  "
                   >
                     Download CV
@@ -127,7 +127,7 @@ const Navbar = () => {
             <li>
               <button className="font-medium text-lg jost-font btn hover:bg-[#f75023] hover:text-white transition-colors duration-700 py-5 px-10 rounded-3xl ms-3 border-2 border-[#f75023] text-[#000000]">
                 <a
-                  href="https://docs.google.com/document/d/1vS4tKq9LqtHUwuaV9o_VSpSP52sKkW0E_Xqtnhi7GN0/export?format=pdf
+                  href="https://drive.google.com/file/d/1PwHafigni9yBd3gUP4f6DZ8bUvk_aN24/view?usp=drive_link
                  "
                 >
                   Download CV
