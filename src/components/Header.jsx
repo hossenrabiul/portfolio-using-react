@@ -20,7 +20,7 @@ const Header = () => {
             <span className="text-[#8067f0]">Bangladesh</span>
           </p>
           <p className="text-[#6f6b80] font-medium text-base md:text-lg leading-relaxed">
-            I'm a creative designer based in New York, and I'm very passionate
+            I'm a Software Engineer, and I'm very passionate
             and dedicated to my work.
           </p>
           <div className="flex items-center gap-10 mt-10">
