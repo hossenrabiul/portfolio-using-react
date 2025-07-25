@@ -1,47 +1,60 @@
 import React from "react";
 // import "../styles/Quality.css";
-import img1 from '../assets/images/1.webp'
-import img2 from '../assets/images/2.webp'
-import img3 from '../assets/images/3.webp'
+import img1 from "../assets/images/1.webp";
+import img2 from "../assets/images/2.webp";
+import img3 from "../assets/images/3.webp";
 
-import bulb from '../assets/images/bulb.png'
+import bulb from "../assets/images/bulb.png";
 const Quality = () => {
   return (
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-[1000px] mx-auto">
       {/* Card 1 */}
       <div className="flex flex-col items-center text-center p-6 bg-white">
         <div className="w-32 h-32 mb-8 rounded-full relative">
-            <img src={img1} alt="" />
-            <img className="absolute w-[70px] h-[70px] bottom-7 left-7 text-bold text-2xl" src={bulb} alt="" />
+          <img src={img1} alt="" />
+          <img
+            className="absolute w-[70px] h-[70px] bottom-7 left-7 text-bold text-2xl"
+            src={bulb}
+            alt=""
+          />
         </div>
-        <h3 className="text-xl font-semibold mb-2">Pixel Perfect</h3>
+        <h3 className="text-xl font-semibold mb-2">Perfect Code</h3>
         <p className="text-[#6f6b80] text-sm leading-7 max-w-xs">
-          Most common methods for designing websites that work well on desktop is responsive and adaptive design.
+          We prioritize clean, maintainable code with precision in UI
+          implementation—ensuring.
         </p>
       </div>
 
       {/* Card 2 */}
       <div className="flex flex-col items-center text-center p-6 bg-white  ">
         <div className="w-32 h-32 mb-8 rounded-full relative">
-            <img src={img2} alt="" />
-            <img className="absolute w-[70px] h-[70px] bottom-7 left-7 text-bold text-2xl" src={bulb} alt="" />
+          <img src={img2} alt="" />
+          <img
+            className="absolute w-[70px] h-[70px] bottom-7 left-7 text-bold text-2xl"
+            src={bulb}
+            alt=""
+          />
         </div>
         <h3 className="text-xl font-semibold mb-2">High Quality</h3>
-        <p className="text-[#6f6b80] text-sm leading-7 max-w-xs">
-          Most common methods for designing websites that work well on desktop is responsive and adaptive design.
-        </p>
+       <p className="text-[#6f6b80] text-sm leading-7 max-w-xs">
+  Committed to high-quality engineering practices including modular architecture, rigorous testing.
+</p>
       </div>
 
       {/* Card 3 */}
       <div className="flex flex-col items-center text-center p-6 bg-white rounded-xl ">
         <div className="w-32 h-32 mb-8 rounded-full relative">
-            <img src={img3} alt="" />
-            <img className="absolute w-[70px] h-[70px] bottom-7 left-7 text-bold text-2xl" src={bulb} alt="" />
+          <img src={img3} alt="" />
+          <img
+            className="absolute w-[70px] h-[70px] bottom-7 left-7 text-bold text-2xl"
+            src={bulb}
+            alt=""
+          />
         </div>
         <h3 className="text-xl font-semibold mb-2">Awesome Idea</h3>
         <p className="text-[#6f6b80] text-sm leading-7 max-w-xs">
-         Most common methods for designing websites that work well on desktop is responsive and adaptive design.
-        </p>
+  We bring innovative ideas to life by leveraging modern technologies, crafting intuitive features.
+</p>
       </div>
     </div>
   );
