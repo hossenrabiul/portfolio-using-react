@@ -20,8 +20,8 @@ const Skills = () => {
     },
   ];
   const backend = [
-    { name: "Python", icon: <FaPython className="text-yellow-500 text-3xl" /> },
-    { name: "Django", icon: <DiDjango className="text-green-800 text-3xl" /> },
+    { name: "Node.js", icon: <FaPython className="text-yellow-500 text-3xl" /> },
+    { name: "Express.js", icon: <DiDjango className="text-green-800 text-3xl" /> },
     {
       name: "PostgreSQL",
       icon: <SiPostgresql className="text-blue-700 text-3xl" />,
